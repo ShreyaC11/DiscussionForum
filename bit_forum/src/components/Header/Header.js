@@ -3,13 +3,14 @@ import './css/Header.css'
 import InboxIcon from "@mui/icons-material/Inbox";
 import SearchIcon from "@mui/icons-material/Search";
 import { Avatar } from "@mui/material";
-
+import {img1} from './images/download.png';
 function Header() {
   return (
     <header>
       <div className="header-container">
         <div className='header-left'>
-          <img src="download.png" alt='logo' />
+          <img src={img1} alt="" />
+          
           <h3>Products</h3>
         </div>
         <div className="header-middle">
