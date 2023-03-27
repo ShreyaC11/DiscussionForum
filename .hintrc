@@ -1,15 +1,16 @@
-{
-  "extends": [
-    "development"
-  ],
-  "hints": {
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "min-width: fit-content"
-        ]
-      }
-    ]
-  }
-}
+// {
+//   "extends": [
+//     "development"
+//   ],
+//   "hints": {
+//     "compat-api/css": [
+//       "default",
+//       {
+//         "ignore": [
+//           "min-width: fit-content"
+//         ]
+//       }
+//     ],
+//     "detect-css-reflows/layout": "off"
+//   }
+// }

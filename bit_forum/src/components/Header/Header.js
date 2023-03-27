@@ -3,14 +3,24 @@ import './css/Header.css'
 import InboxIcon from "@mui/icons-material/Inbox";
 import SearchIcon from "@mui/icons-material/Search";
 import { Avatar } from "@mui/material";
-import {img1} from './images/download.png';
+// import {img1} from './images/download.png';
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
       <div className="header-container">
         <div className='header-left'>
-          <img src={img1} alt="" />
-          
+          <Link to="/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Stack_Overflow_logo.svg/220px-Stack_Overflow_logo.svg.png" alt="Logo" />
+          </Link>
+          {/* Method : import not working */}
+          {/* <img src={img1} alt="" /> */}
+          {/* Method 1: copy address */}
+          {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrDreQZnP2-lYy5t1IiCMOKUoJTtAyO3d2g&usqp=CAU" alt="" /> */}
+          {/* Method 2: in public folder */}
+          {/* <img src={process.env.PUBLIC_URL + "/discussion.png"} alt="logo" /> */}
+          {/* Method 3: craete images folder in public and then add image */}
+          {/* <img src={process.env.PUBLIC_URL + "./images/download.png"} alt="logo" /> */}
           <h3>Products</h3>
         </div>
         <div className="header-middle">
