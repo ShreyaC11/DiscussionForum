@@ -8,9 +8,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import Question from "./components/Add-Question/Question";
-import ViewQuestion from "./components/ViewQuestion";
-import StackOverflow from './components/StackOverflow';
+
 
 function App() {
   return (
@@ -18,8 +16,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/add-question" component={Question} />
-          <Route exact path="/question" component={ViewQuestion} />
+
           <Route exact path="/" component={StackOverflow} />
 
 
