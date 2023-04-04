@@ -4,23 +4,24 @@ import Header from './components/Header/Header';
 
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Redirect,
+  Routes, 
 } from "react-router-dom";
 
-
+import Question from './components/Add-Question/Question';
+import StackOverflow from './components/StackOverflow';
+import ViewQuestion from "./components/ViewQuestion";
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-        <Switch>
-
-          <Route exact path="/" component={StackOverflow} />
-
-
-        </Switch>
+        <Routes>
+        <Route path="/add-question" element={<Question/>} />
+        <Route path="/question" element={<ViewQuestion/>} />
+          <Route path="/" element={<StackOverflow/ > }/>
+        
+        </Routes>
       </Router>
     </div>
   );

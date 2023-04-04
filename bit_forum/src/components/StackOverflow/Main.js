@@ -3,16 +3,23 @@ import { Link } from "react-router-dom";
 import FilterListIcon from '@mui/icons-material/FilterList';
 import AllQuestions from "./AllQuestions";
 import "./css/Main.css";
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main-container">
         <div className="main-top">
           <h2>All Questions</h2>
-          <Link to="/add-question">
-            <button>Ask Question</button>
-          </Link>
+          {/* <Link to="/add-question"> */}
+
+          <button
+            onClick={() => {
+              navigate("/add-question");
+            }}>
+            Ask Question</button>
+          {/* </Link> */}
         </div>
         <div className="main-desc">
           <p>All question statements</p>
@@ -47,10 +54,9 @@ function Main() {
             <AllQuestions />
             <AllQuestions />
           </div>
-
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

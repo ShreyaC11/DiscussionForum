@@ -11,7 +11,7 @@ function Header() {
       <div className="header-container">
         <div className='header-left'>
           <Link to="/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Stack_Overflow_logo.svg/220px-Stack_Overflow_logo.svg.png" alt="Logo" />
+            <img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" />
           </Link>
           {/* Method : import not working */}
           {/* <img src={img1} alt="" /> */}

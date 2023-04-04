@@ -1,6 +1,6 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./css/AllQuestions.css";
 function AllQuestions() {
   return (
@@ -23,7 +23,7 @@ function AllQuestions() {
           </div>
         </div>
         <div className="question-answer">
-          <Link >What is Dbms and its real life applications</Link>
+          <Link to="/question" >What is Dbms and its real life applications</Link>
 
           {/* <a href=>{data.title}</a> */}
 
@@ -45,7 +45,7 @@ function AllQuestions() {
           <div className="author">
             <small>Timestamp</small>
             <div className="author-details">
-              <Avatar/>
+              <Avatar />
               <p>user name</p>
             </div>
           </div>
