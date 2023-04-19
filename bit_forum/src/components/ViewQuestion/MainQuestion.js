@@ -4,7 +4,9 @@ import { Avatar } from '@mui/material';
 import { Link } from "react-router-dom";
 import ReactQuill from 'react-quill';
 import "react-quill/dist/quill.snow.css";//quill's css
-import "./index.css";
+import "./view-ques.css";
+
+
 function MainQuestion() {
   const [show, setShow] = useState(false)
   return (
@@ -81,9 +83,7 @@ function MainQuestion() {
             <div className="all-questions-left">
               <div className="all-options">
                 <p className="arrow">▲</p>
-
                 <p className="arrow">0</p>
-
                 <p className="arrow">▼</p>
 
                 <Bookmark />

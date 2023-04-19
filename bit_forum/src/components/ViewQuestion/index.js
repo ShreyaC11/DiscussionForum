@@ -1,5 +1,5 @@
 import React from "react";
- import "../StackOverflow/css/index.css";
+import "../StackOverflow/css/index.css";
 import MainQuestion from "./MainQuestion";
 import Sidebar from "../StackOverflow/Sidebar";
 function index() {
@@ -7,7 +7,7 @@ function index() {
         <div className="stack-index">
             <div className="stack-index-content">
                 <Sidebar />
-                <MainQuestion/>
+                <MainQuestion />
             </div>
         </div>
     );
