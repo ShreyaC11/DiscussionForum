@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";//quill's css
 import { TagsInput } from "react-tag-input-component";
+// import TagsInput from 'react-tagsinput'
+// import 'react-tagsinput/react-tagsinput.css'
 import './Question.css';
 import { useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
@@ -82,19 +84,20 @@ function Question() {
                             </div>
                         </div>
                         <div className="question-option">
-                            <div className="tag">
+                            <div className="tag" >
                                 <h3>Tags</h3>
                                 <small>
                                     Add up to 5 tags to describe what your question is about
                                 </small>
-                                <div className="tags-input-container">
+                                <div
+                                    // style={{ backgroundcolor: "#3a2525" }}
+                                    className="tags-input-container">
 
                                     <TagsInput
-                                        // className="tags-input-container"
                                         value={tags}
                                         onChange={setTags}
                                         name="tags"
-                                        placeHolder="press enter to add new tag"
+                                        placeHolder="press enter to add new tag                           "
 
                                     />
                                 </div>

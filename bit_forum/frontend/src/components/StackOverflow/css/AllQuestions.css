@@ -9,7 +9,7 @@
 
 .all-questions-container {
   display: flex;
-
+  /* flex-direction: column; */
   flex-direction: row;
   /* align-items: center; */
   justify-content: space-between;
@@ -53,7 +53,7 @@
 }
 
 .question-answer>a:hover {
-  color: #082561d8;
+  color: #1649b1d8;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
@@ -63,7 +63,6 @@
   padding: 5px 10px;
   background-color: #0151f03d;
   border-radius: 3px;
-
 }
 
 .author {
@@ -87,7 +86,6 @@
   font-size: small;
   color: #0151f0d8;
 }
-
 
 /* .question-answer > p {
     font-size: 0.9rem;

@@ -1,0 +1,124 @@
+.RightSidebar {
+    display: flex;
+    padding: 20px 0px 10px 10px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px 0px 5px 10px;
+    /* flex-direction: column; */
+}
+
+.RightSidebar-containers {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+}
+
+
+.RightSidebar-container-top {
+    background-color: rgba(247, 243, 243, 0.715);
+    width: 94%;
+    /* margin-left: 50px; */
+    position: relative;
+    max-height: 350px;
+    /* border: 0.5px solid black; */
+}
+
+.RightSidebar-blogs {
+    background-color: rgba(61, 180, 244, 0.577);
+    justify-content: center;
+    font-size: larger;
+    padding-left: 138px;
+    font-weight: 500;
+    position: relative;
+}
+
+.RightSidebar-blog {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 20px 10px 16px 10px;
+    /* width: max-content; */
+    cursor: pointer;
+
+}
+
+.RightSidebar-container-middle {
+    background-color: rgba(247, 243, 243, 0.715);
+    width: 20%;
+    /* margin-left: 50px; */
+    max-height: 300px;
+    position: absolute;
+    bottom: -9.0%;
+}
+
+.RightSidebar-events {
+    background-color: rgba(61, 180, 244, 0.577);
+    justify-content: center;
+    font-size: larger;
+    padding-left: 90px;
+    font-weight: 500;
+    position: relative;
+}
+
+.RightSidebar-event {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 20px 0px 10px 10px;
+    width: max-content;
+    /* cursor: pointer; */
+}
+
+.RightSidebar-container-down {
+    background-color: rgba(247, 243, 243, 0.715);
+    width: 20%;
+    /* margin-left: 50px; */
+    max-height: 500px;
+    position: absolute;
+    bottom: -33%;
+}
+
+.RightSidebar-tags {
+    background-color: rgba(61, 180, 244, 0.577);
+    justify-content: center;
+    font-size: larger;
+    /* width: 100%; */
+    position: relative;
+    font-weight: 500;
+    padding-left: 90px;
+}
+
+.RightSidebar-tag {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 20px 0px 20px 30px;
+    width: min-content;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+
+}
+
+.RightSidebar-blog>p>.MuiSvgIcon-root {
+    font-size: 17px;
+    margin: 2px 0px 0px 5px;
+    /* margin-right: 5px; */
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.RightSidebar-event>.MuiSvgIcon-root {
+    font-size: 17px;
+    margin: 2px 0px 0px 5px;
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.question-tag {
+    margin: 10px 5px 0px 20px;
+    padding: 5px 10px;
+    background-color: #0151f03d;
+    border-radius: 3px;
+
+}

@@ -62,13 +62,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Auth />} />
-            <Route path="/stackoverflow" element={<StackOverflow />} />
-            <Route exact path="/add-question" element={<Question />} />
-            <Route exact path="/question" element={<ViewQuestion />} />
-          </Routes>  
+        <Header />
+        <Routes>
+          <Route path="/" element={<Auth />} />
+        
+       
+          {/* <Route path="/header" element={<Header/>} /> */}
+          <Route path="/stackoverflow" element={<StackOverflow />} />
+          <Route exact path="/add-question" element={<Question />} />
+          <Route exact path="/question" element={<ViewQuestion />} />
+        </Routes>
       </Router>
     </div>
   );
