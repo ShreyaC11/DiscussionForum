@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const router = express.Router();
-
 const QuestionDB = require("../models/Question");
 
 router.post("/", async (req, res) => {

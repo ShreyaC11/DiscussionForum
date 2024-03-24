@@ -15,6 +15,11 @@ const answerSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Comments",
   },
-});
+},
+  // {
+  //   collection: "Answers",
+  // }
+);
 
 module.exports = mongoose.model("Answers", answerSchema);
+// mongoose.model("Answers", answerSchema);

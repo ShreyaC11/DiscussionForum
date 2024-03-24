@@ -129,7 +129,6 @@ function MainQuestion() {
                 </div>
               </div>
               <div className="comments">
-
                 <div className="comment">
                   {
                     questionData?.comments && questionData?.comments?.map((_qd) => <p>{_qd?.comment} -

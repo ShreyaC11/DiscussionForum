@@ -21,7 +21,7 @@ function Header() {
       <div className="header-container">
         <div className="header-left">
           <Link to='/stackoverflow'>
-            <img src={process.env.PUBLIC_URL + "/logo.jpg"} alt="logo" />
+            <img src={process.env.PUBLIC_URL + "/logo1.jpeg"} alt="logo" />
             {/* <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrDreQZnP2-lYy5t1IiCMOKUoJTtAyO3d2g&usqp=CAU"/> */}
           </Link>
           {/* Method : import not working */}
@@ -32,7 +32,13 @@ function Header() {
           {/* <img src={process.env.PUBLIC_URL + "/discussion.png"} alt="logo" /> */}
           {/* Method 3: craete images folder in public and then add image */}
           {/* <img src={process.env.PUBLIC_URL + "./images/download.png"} alt="logo" /> */}
-          <h3>Products</h3>
+          {/* <h3>Leaderboard</h3> */}
+          <div className='leader'>
+            <Link to='/leaderboard'>
+              <h2>Leaderboard </h2>
+            </Link>
+          </div>
+
         </div>
         <div className="header-middle">
           <div className='header-search-container'>
@@ -73,7 +79,7 @@ function Header() {
 
       </div>
     </header>
-  )
+  );
 }
 
 export default Header

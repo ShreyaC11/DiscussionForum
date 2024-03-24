@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 import { FilterList } from "@mui/icons-material";
 import AllQuestions from './AllQuestions';
@@ -7,6 +7,7 @@ import AllQuestions from './AllQuestions';
 // import AllQuestions3 from './AllQuestions3';
 import "./css/Main.css";
 import { useNavigate } from 'react-router-dom';
+
 
 function Main({questions}) {
   const navigate = useNavigate()

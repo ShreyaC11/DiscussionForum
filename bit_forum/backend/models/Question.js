@@ -13,6 +13,11 @@ const questionSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Comments",
   },
-});
+},
+  // {
+  //   collection: "Questions",
+  // }
+);
 
 module.exports = mongoose.model("Questions", questionSchema);
+// mongoose.model("Questions", questionSchema);

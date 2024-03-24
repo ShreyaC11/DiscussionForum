@@ -10,6 +10,13 @@ const bodyParser = require("body-parser");
 const db = require("./db");
 const PORT = process.env.PORT || 80;
 const router = require("./routers");
+const { default: mongoose } = require("mongoose");
+
+// require("./Questions");
+// require("./Answers");
+// require("./Comments");
+
+
 
 //db-connection
 // const db = require("./db");
@@ -36,14 +43,22 @@ app.use("/uploads", express.static(path.join(__dirname, "/../uploads")));
 app.use(express.static(path.join(__dirname, "/../frontend/build")));
 
 
-app.get("*", (req, res) => {
+// app.get("*", (req, res) => {
+//   try {
+//     res.sendFile(path.join(`${__dirname}/../frontend/build/index.html`));
+//   } catch (e) {
+//     res.send("OOPS! An error occured");
+//   }
+// });
+app.get("/getdetails", async (req, res) => {
   try {
-    res.sendFile(path.join(`${__dirname}/../frontend/build/index.html`));
-  } catch (e) {
-    res.send("OOPS! An error occured");
+    const details = await QuestionDB.find({});
+    res.send({ status: "ok", data: details });
+  }
+  catch (error) {
+    console.log(error);
   }
 });
-
 
 //cors
 app.use(cors());
@@ -53,3 +68,4 @@ app.listen(PORT, () => {
   console.log(`Discussion forum API is running on PORT No- ${PORT}`);
 }
 );
+

@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import Header from './components/Header/Header';
+import React, { useEffect } from "react";
+import "./App.css";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -8,13 +8,15 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Question from './components/Add-Question/Question';
-import StackOverflow from './components/StackOverflow';
+import Header from "./components/Header/Header";
+import Question from "./components/Add-Question/Question";
+import StackOverflow from "./components/StackOverflow";
 import ViewQuestion from "./components/ViewQuestion";
-import Auth from './components/Auth';
+import Auth from "./components/Auth";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import { auth } from "./firebase";
+import Board from "./components/LeaderBoard/board";
 
 function App() {
   const user = useSelector(selectUser);
@@ -58,17 +60,15 @@ function App() {
     />
   );
 
-
   return (
     <div className="App">
       <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Auth />} />
-        
-       
           {/* <Route path="/header" element={<Header/>} /> */}
-          <Route path="/stackoverflow" element={<StackOverflow />} />
+          <Route path="/discuss" element={<StackOverflow />} />
+          <Route path="/leaderboard" element={<Board />} />
           <Route exact path="/add-question" element={<Question />} />
           <Route exact path="/question" element={<ViewQuestion />} />
         </Routes>
@@ -78,4 +78,3 @@ function App() {
 }
 
 export default App;
-
